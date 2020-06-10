@@ -5,7 +5,9 @@ sxhkd &
 polybar -r topbar &
 polybar -r bottombar &
 dunst &
+compton &
 spotify &
+~/.fehbg &
 
 inner_gap=10
 outer_gap_vert=10

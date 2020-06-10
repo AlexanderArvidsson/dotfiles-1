@@ -150,17 +150,13 @@ XF86AudioNext
 XF86AudioPrev
   playerctl previous
 
-# spotify-tui drop
-super + ctrl + n
-  tdrop -h 500 -w 1000 -x 1542 -y 800 -n 4 -a --name sasdasd -f '-e spt' kitty
 
 # Termite drop
 super + ctrl + s
-  tdrop -h 500 -w 1000 -x 13 -y 44 -n 2 -a --name terminal kitty
-
+  tdrop -h 500 -w 1000 -x 13 -y 44 -n 2 -a --name terminal /home/earvchr/programs/kitty/kitty/launcher/kitty
 # Ranger drop
 super + ctrl + r
-  tdrop -h 500 -w 1000 -x 1542 -y 42 -n 3 -a --name ranger -f '-e ranger' kitty
+  tdrop -h 500 -w 1000 -x 1542 -y 42 -n 3 -a --name ranger -f '-e ranger' /home/earvchr/programs/kitty/kitty/launcher/kitty
 
 # Bitwarden rofi
 super + shift + o
@@ -176,8 +172,7 @@ super + {_, shift} + Print
 
 # Lock
 super + ctrl + alt + l
-  dm-tool lock
-
+  gnome-screensaver-command -l
 # Increase gap
 super + plus
   /home/eethern/.config/sxhkd/scripts/gap_inc.sh

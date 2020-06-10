@@ -20,7 +20,7 @@ enable-ipc = true
 width = 100%
 height = 20
 offset-x = 0
-offset-y = 14
+offset-y = 10
 radius = 0.0
 fixed-center = true
 
@@ -35,15 +35,12 @@ border-color = #00000000
 padding-left = 2
 padding-right = 2
 
-module-margin-left = 1
-module-margin-right = 1
+module-margin-left = 2
+module-margin-right = 2
 
-font-0 = Monaco for Powerline:size=10;2
-font-1 = FontAwesome5Free:style=Regular:size=11;2
-font-2 = FontAwesome5Free:style=Solid:size=11;2
-font-3 = FontAwesome5Brands:size=12;2
-font-4 = Material Design Icons:size=14;2
-font-5 = Material\-Design\-Iconic\-Font:size=18;2
+font-0 = Monaco for Powerline:size=11
+font-1 = FontAwesome:size=11;2
+font-2 = Material\ Icons:size=10
 
 ;modules-left = 
 ;modules-center =
@@ -60,9 +57,9 @@ wm-restack = bspwm
 [bar/bottombar]
 enable-ipc = true
 width = 100%
-height = 25
+height = 20
 offset-x = 0
-offset-y = 10
+offset-y = 5
 radius = 0.0
 fixed-center = true
 bottom = true
