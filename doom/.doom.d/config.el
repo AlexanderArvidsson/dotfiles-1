@@ -53,8 +53,8 @@
 ;; MODULES ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 (load! "+ui")  ; Contains ui modifications
 (load! "+org") ; Contains org modifications
-(load! "+lsp") ; Contains lsp modifications
-;;~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+;;(load! "+lsp") ; Contains lsp modifications
+;~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ;;
 ;; Here are some additional functions/macros that could help you configure Doom:

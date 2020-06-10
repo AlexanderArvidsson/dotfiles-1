@@ -4,7 +4,7 @@
 
 # terminal emulator
 super + Return
-  kitty
+  /home/earvchr/programs/kitty/kitty/launcher/kitty
 
 # program launcher
 super + {_,shift} + p

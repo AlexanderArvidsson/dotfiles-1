@@ -1,26 +1,16 @@
 #! /bin/sh
 
 ## Startup
-if [ ! -f /tmp/bspwm_startup ]
-then
-    touch /tmp/bspwm_startup
-    # Do startup stuff
-    picom --config ~/.config/picom/picom.conf &
-    polybar -r topbar &
-    polybar -r bottombar &
-    spotify --force-device-scale-factor=1.25 &
-    dunst &
-    blueman-applet &
-    mullvad-vpn &
-    # mullvad-tray &
-    redshift-gtk &
-    sxhkd &
-fi
+sxhkd &
+polybar -r topbar &
+polybar -r bottombar &
+dunst &
+spotify &
 
-inner_gap=30
+inner_gap=10
 outer_gap_vert=10
 outer_gap_hori=20
-bar_compensation=44
+bar_compensation=10
 
 bspc monitor -d web code opt1 opt2 opt3 opt4 opt5 opt6 msg music
 

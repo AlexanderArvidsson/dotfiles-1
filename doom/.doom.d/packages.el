@@ -8,11 +8,11 @@
   ;(package! org-ref)          ; Helps with references
   (package! org-drill))       ; Anki for org mode (flashcards)
 
-(when (package! lsp)
-  (package! lsp-ui)
-  (package! lsp-ivy)
-  (package! lsp-treemacs)
-  )
+;; (when (package! lsp)
+;;   (package! lsp-ui)
+;;   (package! lsp-ivy)
+;;   (package! lsp-treemacs)
+;;   )
 
 ;;~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ;; To install a package with Doom you must declare them here, run 'doom sync' on

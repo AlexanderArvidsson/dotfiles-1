@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/home/eethern/.oh-my-zsh"
+export ZSH="/home/earvchr/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -77,10 +77,6 @@ plugins=(git
          sudo
          colorize)
 
-source $ZSH/oh-my-zsh.sh
-source /usr/share/fzf/key-bindings.zsh
-source /usr/share/fzf/completion.zsh
-
 # User configuration
 # Reduce waittime when switching modes in vi-mode
 export KEYTIMEOUT=1
@@ -109,21 +105,18 @@ export KEYTIMEOUT=1
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 # 
-alias dotfiles="/home/eethern/.dotfiles/"
-alias lc='colorls --sd'
-alias doom='/home/eethern/doom-emacs/bin/doom'
-
-eval $(thefuck --alias)
 
 export EDITOR=nvim
 
-# Pyenv
-eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
-export PYENV_VIRTUALENV_DISABLE_PROMPT=1
+# # Pyenv
+# eval "$(pyenv init -)"
+# eval "$(pyenv virtualenv-init -)"
+# export PYENV_VIRTUALENV_DISABLE_PROMPT=1
 
 # Load nvm
 [[ -s $HOME/.nvm/nvm.sh ]] && . $HOME/.nvm/nvm.sh
 
 # Autojump
 source /usr/share/autojump/autojump.zsh
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
