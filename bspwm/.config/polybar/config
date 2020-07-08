@@ -35,14 +35,14 @@ border-color = #00000000
 padding-left = 2
 padding-right = 2
 
-module-margin-left = 2
-module-margin-right = 2
+module-margin-left = 1
+module-margin-right = 1
 
 font-0 = Monaco for Powerline:size=11
 font-1 = FontAwesome:size=11;2
 font-2 = Material\ Icons:size=10
 
-;modules-left = 
+modules-left = bluetooth bluetooth-menu
 ;modules-center =
 modules-right = backlight volume wlan battery date time
 
@@ -90,14 +90,14 @@ wm-restack = bspwm
 
 [module/vpn-openvpn-status]
 type = custom/script
-exec = /home/eethern/.config/polybar/scripts/vpn/vpn-openvpn-status.sh
+exec = /home/earvchr/.config/polybar/scripts/vpn/vpn-openvpn-status.sh
 interval = 5
 
 [module/do-not-disturb]
 type = custom/script
-exec = exec /home/eethern/.config/polybar/scripts/do_not_disturb/do_not_disturb_status.sh
+exec = exec /home/earvchr/.config/polybar/scripts/do_not_disturb/do_not_disturb_status.sh
 interval = 3
-click-left = exec /home/eethern/.config/polybar/scripts/do_not_disturb/do_not_disturb_toggle.sh
+click-left = exec /home/earvchr/.config/polybar/scripts/do_not_disturb/do_not_disturb_toggle.sh
 
 [module/bluetooth-menu]
 type = custom/menu
@@ -107,17 +107,17 @@ label-close = [Close]
 label-separator = " | "
 
 menu-0-0 = Toggle
-menu-0-0-exec = exec /home/eethern/.config/polybar/scripts/bluetooth/toggle_bluetooth.sh
+menu-0-0-exec = exec /home/earvchr/.config/polybar/scripts/bluetooth/toggle_bluetooth.sh
 menu-0-1 = Paired devices
 menu-0-1-exec = menu-open-1
 
 menu-1-0 = Headset
-menu-1-0-exec = exec /home/eethern/.config/polybar/scripts/bluetooth/toggle_connect_bluetooth.sh
+menu-1-0-exec = exec /home/earvchr/.config/polybar/scripts/bluetooth/toggle_connect_bluetooth.sh
 
 [module/bluetooth]
 type = custom/script
 format-prefix = ""
-exec = /home/eethern/.config/polybar/scripts/bluetooth/status.sh
+exec = /home/earvchr/.config/polybar/scripts/bluetooth/status.sh
 
 [module/player-mpris-simple]
 type = custom/script
@@ -236,7 +236,7 @@ format = <ramp> <bar>
 ramp-0 = 
 ramp-font = 2
 
-bar-width = 6
+bar-width = 5
 bar-indicator = 
 bar-indicator-foreground = ${colors.soft-highlight}
 bar-indicator-font = 4
@@ -314,7 +314,7 @@ ramp-signal-foreground = ${bar/topbar.foreground}
 
 [module/eth]
 type = internal/network
-interface = enp0s20f0u3
+interface = enp0s31f6
 interval = 3.0
 
 format-connected-underline = #55aa55
@@ -373,7 +373,7 @@ label-muted-foreground = ${colors.soft-highlight}
 label-muted = "muted"
 label-muted-font = 1
 
-bar-volume-width = 6
+bar-volume-width = 5
 bar-volume-foreground-0 = ${colors.soft-highlight}
 bar-volume-foreground-1 = ${colors.soft-highlight}
 bar-volume-foreground-2 = ${colors.soft-highlight}

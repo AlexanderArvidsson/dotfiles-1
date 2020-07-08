@@ -2,6 +2,7 @@
 ;;; $DOOMDIR/packages.el
 
 (package! ix)               ; Pastebin alternative
+(package! realgud)          ; gdb to the extreme
 
 (when (package! org)
   (package! org-super-agenda) ; Super agenda for even more agenda power!
@@ -13,6 +14,7 @@
 ;;   (package! lsp-ivy)
 ;;   (package! lsp-treemacs)
 ;;   )
+
 
 ;;~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ;; To install a package with Doom you must declare them here, run 'doom sync' on
