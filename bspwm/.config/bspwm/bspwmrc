@@ -16,7 +16,7 @@ outer_gap_hori=10
 bar_compensation=10
 
 bspc monitor eDP-1 -n 0 -d web code opt1 opt2 opt3 opt4 opt5 opt6 msg music
-bspc monitor HDMI-1 -n 1 -d web code opt1 opt2 opt3 opt4 opt5 opt6 msg music
+bspc monitor DP-1 -n 1 -d web code opt1 opt2 opt3 opt4 opt5 opt6 msg music
 
 bspc config border_width         3
 
