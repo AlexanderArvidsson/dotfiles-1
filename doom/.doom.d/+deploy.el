@@ -8,3 +8,9 @@
                     vc-ignore-dir-regexp
                     tramp-file-name-regexp))
 (setq tramp-verbose 1)
+;; (add-to-list 'tramp-remote-path 'tramp-own-remote-path)
+;; (add-to-list 'tramp-remote-path "/app/vbuild/RHEL7-x86_64/git/2.12.2/bin")
+(after! tramp
+  (add-to-list 'tramp-remote-path "/app/vbuild/RHEL7-x86_64/git/2.12.2/bin")
+  (add-to-list 'tramp-remote-path 'tramp-own-remote-path)
+  (setq magit-git-executable "git"))

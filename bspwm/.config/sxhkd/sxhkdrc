@@ -172,7 +172,7 @@ super + shift + o
 
 # Screenshot utility: +shift for save
 super + {_, shift} + Print
-  xfce4-screenshooter {-c -r,-r}
+  xfce4-screenshooter {-s ~/Pictures/screen/ -r,-r}
 
 # Show help menu
 # super +

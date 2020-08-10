@@ -1,8 +1,11 @@
 ;; -*- no-byte-compile: t; -*-
 ;;; $DOOMDIR/packages.el
 
-(package! ix)               ; Pastebin alternative
-(package! realgud)          ; gdb to the extreme
+(package! ix)                      ; Pastebin alternative
+(package! realgud)                 ; gdb to the extreme
+(package! yang-mode)               ; Edit yang files
+(package! flatbuffers-mode         ; Edit flatbuffers(package! example
+  :recipe (:host github :repo "Asalle/flatbuffers-mode"))
 
 (when (package! org)
   (package! org-super-agenda) ; Super agenda for even more agenda power!

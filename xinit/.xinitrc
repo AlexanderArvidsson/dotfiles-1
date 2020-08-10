@@ -8,4 +8,6 @@
 # Set keymap for xdotool
 setxkbmap $(setxkbmap -query | grep layout: | sed 's/layout: //g')
 
+# Key delay
+xset r rate 200 25
 ~/.fehbg &
