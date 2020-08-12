@@ -19,3 +19,5 @@
 (use-package lsp-ivy :commands lsp-ivy-workspace-symbol)
 (use-package lsp-treemacs :commands lsp-treemacs-errors-list)
 
+;; Rust stuff
+(setq rustic-lsp-server 'rust-analyzer)
